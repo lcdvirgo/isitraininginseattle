@@ -1,10 +1,19 @@
+from flask import Flask
+
+app = Flask(__name__)
+
+
 #!/usr/bin/env python
 
 #workaround to install new packages without being root
-import sys
+import sys, os
+abspath = os.path.dirname(__file__)
+sys.path.append(abspath)
+os.chdir(abspath)
+import web
+
 sys.path.append('/home/username/py_libs/')
 
-import web
 import requests
 from xml.dom import minidom
 
@@ -35,8 +44,9 @@ class index:
             return "Error fetching weather data. Try again later."
 
 if __name__ == "__main__":
-    app = web.application(urls, globals())
-    app.run()
+
+
+    app.run(debug=True)
 
 """
 Applicable weather codes, for reference: 
