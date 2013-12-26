@@ -1,4 +1,5 @@
 #!/usr/bin/env python
+import os
 
 #workaround to install new packages without being root
 import sys
