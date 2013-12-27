@@ -31,7 +31,7 @@ class index:
                 israining = "YES"
             else:
                 israining = "NO"
-                bgimage = http://upload.wikimedia.org/wikipedia/commons/b/bc/Base_of_Gorman_Fall_like_Raining.jpg
+                bgimage = "rain.jpg"
             
             return render.index(israining, currweather, degrees, bgimage)
         else:
