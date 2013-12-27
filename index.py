@@ -30,10 +30,10 @@ class index:
             if weathercode in raincodes:
                 israining = "YES"
             else:
-                print 'Location: http://www.google.com'
                 israining = "NO"
+                bgimage = http://upload.wikimedia.org/wikipedia/commons/b/bc/Base_of_Gorman_Fall_like_Raining.jpg
             
-            return render.index(israining, currweather, degrees)
+            return render.index(israining, currweather, degrees, bgimage)
         else:
             return "Error fetching weather data. Try again later."
 
