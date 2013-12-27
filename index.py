@@ -31,7 +31,7 @@ class index:
                 israining = "YES"
             else:
                 israining = "NO"
-                bgimage = "rain.css"
+                bgimage = "https://raw.github.com/lcdvirgo/isitraininginseattle/master/rain.css"
             
             return render.index(israining, currweather, degrees, bgimage)
         else:
