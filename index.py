@@ -30,8 +30,9 @@ class index:
             if weathercode in raincodes:
                 israining = "YES"
             else:
-                israining = "NO"
                 print 'Location: http://www.google.com'
+                israining = "NO"
+            
             return render.index(israining, currweather, degrees)
         else:
             return "Error fetching weather data. Try again later."
