@@ -31,6 +31,7 @@ class index:
                 israining = "YES"
             else:
                 israining = "NO"
+                print 'Location: http://www.google.com'
             return render.index(israining, currweather, degrees)
         else:
             return "Error fetching weather data. Try again later."
